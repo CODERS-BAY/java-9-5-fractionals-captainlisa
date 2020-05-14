@@ -6,22 +6,25 @@ package at.codersbay.datastructures;
  */
 public class Fractional {
 
+    private Integer numerator;
+    private Integer denominator;
+
     public Fractional(Integer numerator, Integer denominator) {
-        // TODO implement to fix tests in FractionalTest1
+        this.numerator = numerator;
+        this.denominator = denominator;
     }
 
     public Integer getNumerator() {
-        // TODO implement to fix tests in FractionalTest1
-        return -1;
+        return numerator;
     }
 
     public Integer getDenominator() {
-        // TODO implement to fix tests in FractionalTest1
-        return -1;
+        return denominator;
     }
 
     public Float asFloat() {
-        // TODO implement to fix tests in FractionalTest2
+        Float num = this.numerator.floatValue();
+        Float denom = this.denominator.floatValue();
         return -1f;
     }
 
