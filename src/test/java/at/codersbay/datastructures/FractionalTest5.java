@@ -1,5 +1,6 @@
 package at.codersbay.datastructures;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -14,7 +15,7 @@ public class FractionalTest5 {
     }
 
     @Test
-    public void testDivisionWithOne() {
+    public void testDivisionWithFour() {
         assertThat(new Fractional(1, 3).divide(4))
                 .isEqualTo(new Fractional(1, 12));
     }

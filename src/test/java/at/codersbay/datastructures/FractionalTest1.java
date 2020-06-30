@@ -1,8 +1,11 @@
 package at.codersbay.datastructures;
 
+import org.assertj.core.api.Assert;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class FractionalTest1 {
@@ -10,10 +13,10 @@ public class FractionalTest1 {
     @Test
     // A fractional can be created if positive natural numbers are passed as numerator and denominator
     public void testFractionalCreation() {
-        Fractional fractional = new Fractional(1, 2);
+        Fractional fractional1 = new Fractional(1, 2);
 
-        assertThat(fractional.getNumerator()).isEqualTo(1);
-        assertThat(fractional.getDenominator()).isEqualTo(2);
+        assertThat(fractional1.getNumerator()).isEqualTo(1);
+        assertThat(fractional1.getDenominator()).isEqualTo(2);
     }
 
     @Test

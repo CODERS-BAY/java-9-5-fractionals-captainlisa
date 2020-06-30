@@ -8,7 +8,7 @@ public class FractionalTest6 {
 
     @Test
     public void testAddNaturalNumber() {
-        assertThat(new Fractional(3, 7).add(3))
+            assertThat(new Fractional(3, 7).add(3))
                 .isEqualTo(new Fractional(24, 7));
     }
 
